@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4"
+      layout:decorate="~{layouts/mainlayout}">
+<head>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/home/index.css}" />
+    <title>Rent-A-Car - a Spring Boot demo webapp using JPA</title>
+</head>
+<body>
+    <th:block layout:fragment="content">
+
+        <h3>Admin Dashboard</h3>
+        <hr/>
+        <div>
+            <div style="font-size: 1em">
+                To create and manage Cars and Categories, please first make sure to read the
+                instructions and key points provided below. And then click the
+                appropriate button, located below.<br/><br/>
+
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived not
+                only five centuries, but also the leap into electronic typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s with
+                the release of Letraset sheets containing Lorem Ipsum passages, and
+                more recently with desktop publishing software like Aldus PageMaker
+                including versions of Lorem Ipsum.
+            </div>
+            <div style="float: left; margin-top: 3em;">
+                <a class="btn btn-outline-success btn-lg" href="/rentacar/cars/list">
+                    Manage Cars
+                </a>
+            </div>
+            <div style="float: left; margin-top: 3em; margin-left: 2em;">
+                <a class="btn btn-outline-success btn-lg" href="/rentacar/categories/list">
+                    Manage Categories
+                </a>
+            </div>
+        </div>
+        <p>&nbsp;</p>
+
+    </th:block>
+
+    <th:block layout:fragment="footer"></th:block>
+
+</body>
+</html>
